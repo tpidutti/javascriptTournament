@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="viewTopScore">View Highscore</div>
+      <div id="time">Time 50</div>
+    </header>
+
+    <main>
+      <div class="open">
+        <h1>Javascript Tournament</h1>
+        <p>
+          Answer the questions in the given time. Any incorrect answers will
+          subtract time form your total time limit.
+        </p>
+        <button id="start">start</button>
+      </div>
+
+      <div class="inquiry hide">
+        <h2 id="questions">questions?</h2>
+        <div id="answersContainer">
+          <!-- <button class="answer1">answer1</button>
+        <button class="answer2">answer2</button>
+        <button class="answer3">answer3</button>
+        <button class="answer4">answer4</button> -->
+        </div>
+      </div>
+
+      <div class="done hide">
+        <h2>All done!</h2>
+        <p>Your final score is</p>
+        <form>
+          <label for="EnterInitials">Enter initials</label>
+          <input type="text" id="EnterInitals" name="=EnterInitals" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="highscores hide">
+        <h2>Highscores</h2>
+        <form>
+          <label for="Highscores"></label>
+          <input type="text" id="Highscores" name="Highscores" />
+        </form>
+        <br />
+        <button id="goBack">Go Back</button>
+        <button id="clearHighscores">Clear Highscores</button>
+      </div>
+    </main>
+    <script src="Assets/script.js"></script>
+  </body>
+</html>

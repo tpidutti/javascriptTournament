@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+.open {
+  text-align: center;
+}
+#time {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#viewTopScore {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.questions {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(11, 144, 189);
+  color: lightcyan;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.done {
+  text-align: center;
+}
+
+.highscores {
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
