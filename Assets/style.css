@@ -8,15 +8,27 @@ body {
 }
 #time {
   position: fixed;
+  padding: 10px;
   top: 0;
   right: 0;
 }
 #viewTopScore {
   position: fixed;
+  padding: 10px;
   top: 0;
   left: 0;
 }
-.questions {
+
+#answersContainer {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    font-size: large;
+    width: 100px;
+    margin: auto;
+}
+
+.inquiry {
   text-align: center;
 }
 
