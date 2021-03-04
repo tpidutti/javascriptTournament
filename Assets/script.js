@@ -42,6 +42,9 @@ var highscore = 0;
 
 var timeEl = document.querySelector("#time");
 
+// start button click so game begins
+document.getElementById("start").addEventListener("click", startGame);
+
 // When game starts the timer starts and question is displayed
 function startGame() {
   startTime();
@@ -62,17 +65,20 @@ function startTime() {
   }, 1000);
 }
 
-// start button click so game begins
-document.getElementById("start").addEventListener("click", startGame);
+var inquiryEl = document.getElementById("inquiry");
 
 // display questions, answers in buttons
 function displayQuestion(arr) {
-  document.getElementById(questions).innerText = arr[questionNumber].questions;
+  inquiryEl.classList.remove("hide");
 
-
+  
 }
 
-// presented with a question
+//   document.getElementById(questions).innerText = arr[questionNumber].questions;
+
+
+
+
 // I answer a question, am presented with another question
 // answer a question incorrectly, 5 seconds is subtracted from the clock
 // game over when all questions are answered
@@ -80,7 +86,3 @@ function displayQuestion(arr) {
 
 // goBack and clearHighscores buttons
 // link to view highscores
-
-//   document.getElementById("done").classList.add("hide");
-//   document.getElementById("highscores").classList.add("hide");
-// document.getElementById("inquiry").classList.add("show");
