@@ -18,22 +18,23 @@
         <h1>Javascript Tournament</h1>
         <p>
           Answer the questions in the given time. Any incorrect answers will
-          subtract time form your total time limit.
+          subtract time form your total time limit. If you answer all the
+          questions before the time runs out you win.
         </p>
         <button id="start">start</button>
       </div>
 
-      <div class="inquiry">
-        <h2 id="questions">questions?</h2>
+      <div class="inquiry hide" id="generateQuestion">
+        <h2 id="question">questions?</h2>
         <div id="answersContainer">
-        <button class="answer1">answer1</button>
-        <button class="answer2">answer2</button>
-        <button class="answer3">answer3</button>
-        <button class="answer4">answer4</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
         </div>
       </div>
 
-      <div class="done">
+      <div class="done hide">
         <h2>All done!</h2>
         <p>Your final score is</p>
         <form>
@@ -43,7 +44,7 @@
         </form>
       </div>
 
-      <div class="highscores">
+      <div class="highscores hide">
         <h2>Highscores</h2>
         <form>
           <label for="Highscores"></label>

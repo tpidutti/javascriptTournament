@@ -1,49 +1,51 @@
 // create questions with answers in an array
 var questions = [
-    {
-      question: "How xhhjgijkk kikhjhvj?",
-      answers: ["vcbmnbn", "tooiuoio", "hjgkk"],
-      rightAnswer: "asgfhjhk",
-    },
-    {
-      question: "#",
-      answers: ["#", "#", "#"],
-      rightAnswer: "",
-    },
-    {
-      question: "#",
-      answers: ["#", "#", "#"],
-      rightAnswer: "",
-    },
-    {
-      question: "#",
-      answers: ["#", "#", "#"],
-      rightAnswer: "",
-    },
-    {
-      question: "#",
-      answers: ["#", "#", "#"],
-      rightAnswer: "",
-    },
-    {
-      question: "#",
-      answers: ["#", "#", "#"],
-      rightAnswer: "",
-    },
-  ];
+  {
+    question: "Javascript was originally called what name?",
+    answers: ["Cadillac", "Hot Lava", "Cuppa Joe"],
+    rightAnswer: "Mocha",
+  },
+  {
+    question: "#",
+    answers: ["#", "#", "#"],
+    rightAnswer: "",
+  },
+  {
+    question: "#",
+    answers: ["#", "#", "#"],
+    rightAnswer: "",
+  },
+  {
+    question: "#",
+    answers: ["#", "#", "#"],
+    rightAnswer: "",
+  },
+  {
+    question: "#",
+    answers: ["#", "#", "#"],
+    rightAnswer: "",
+  },
+  {
+    question: "#",
+    answers: ["#", "#", "#"],
+    rightAnswer: "",
+  },
+];
 
-  //variables for the correct answer, the users answer, which question number, the total amount of time, interval and the top score
+//variables for the correct answer, the users answer, which question number, the total amount of time, interval and the top score
 var rightAnswer = "";
 var userAnswer = "";
 var questionNumber = 0;
 var secondsLeft = 50;
 var interval;
 var highscore = 0;
+
 var timeEl = document.querySelector("#time");
 
 // When game starts the timer starts and question is displayed
 function startGame() {
   startTime();
+  document.getElementById("start").classList.add("hide");
   displayQuestion(questions);
 }
 
@@ -60,27 +62,25 @@ function startTime() {
   }, 1000);
 }
 
-// start button  click so game begins
+// start button click so game begins
 document.getElementById("start").addEventListener("click", startGame);
 
-
+// display questions, answers in buttons
 function displayQuestion(arr) {
-  document.getElementById("questions").innerText = arr[questionNumber].question;
+  document.getElementById(questions).innerText = arr[questionNumber].questions;
+
+
 }
 
-
-
-
-
-
-
-
-
-
-// question with answer buttons clicks that -10 seconds with incorrect answers
-
-// Game over all questions answered
-
-// save initals and score in a form
+// presented with a question
+// I answer a question, am presented with another question
+// answer a question incorrectly, 5 seconds is subtracted from the clock
+// game over when all questions are answered
+// I can save my initials and my score when the game is over
 
 // goBack and clearHighscores buttons
+// link to view highscores
+
+//   document.getElementById("done").classList.add("hide");
+//   document.getElementById("highscores").classList.add("hide");
+// document.getElementById("inquiry").classList.add("show");

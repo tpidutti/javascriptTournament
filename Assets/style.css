@@ -5,7 +5,10 @@ body {
 
 .open {
   text-align: center;
+  padding: 10px;
+  margin: 0 auto;
 }
+
 #time {
   position: fixed;
   padding: 10px;
