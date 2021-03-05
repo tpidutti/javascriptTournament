@@ -33,6 +33,7 @@ var questions = [
 var rightAnswer = "";
 var userAnswer = "";
 var questionNumber = 0;
+var answerNumber = 0;
 var secondsLeft = 50;
 var interval;
 var highscore = 0;
@@ -76,22 +77,35 @@ function displayQuestion(arr, num) {
 var ansButton1 = document.getElementById("button1");
 ansButton1.addEventListener("click", nextQuestion);
 
-var ansButton1 = document.getElementById("button2");
-ansButton1.addEventListener("click", nextQuestion);
+var ansButton2 = document.getElementById("button2");
+ansButton2.addEventListener("click", nextQuestion);
 
-var ansButton1 = document.getElementById("button3");
-ansButton1.addEventListener("click", nextQuestion);
+var ansButton3 = document.getElementById("button3");
+ansButton3.addEventListener("click", nextQuestion);
 
-var ansButton1 = document.getElementById("button4");
-ansButton1.addEventListener("click", nextQuestion);
+var ansButton4 = document.getElementById("button4");
+ansButton4.addEventListener("click", nextQuestion);
 
 // show next question in increasing order
 function nextQuestion() {
   // increase our questionNumber by 1
   questionNumber++;
-  // we want to dispaly our new question
+  // we want to display our new question
   displayQuestion(questions, questionNumber);
 }
+
+//
+
+// displayAnswers(questions, answerNumber);
+// ansButton1.innerText = arr[num].answers;
+// function displayAnswers(arr, num) {
+//   document.getElementById("button1").innerText = arr[num].answers;
+
+// }
+
+// finishedEl.classList.remove("hide");
+
+// highscoresEl.classList.remove("hide");
 
 // show answer text on buttons
 // I answer a question, determine if correct

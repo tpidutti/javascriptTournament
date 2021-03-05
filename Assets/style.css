@@ -40,16 +40,12 @@ button {
   padding: 20px;
 }
 
-.done {
+.finished {
   text-align: center;
 }
 
 .highscores {
   text-align: center;
-}
-
-.show {
-  display: block;
 }
 
 .hide {

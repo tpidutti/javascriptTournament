@@ -3,15 +3,15 @@
 Coding Quiz
 
 LOGIC, which is basically the javascript
-click start button
-    timer starts, set amount of time for entire game
+    <!-- click start button -->
+    <!-- timer starts, set amount of time for entire game -->
     <!-- presented with question -->
+presented with possible answer buttons
+answer question, check if correct
+    <!-- presented with another question -->
 
-<!-- answer question
-    presented with another question -->
-
-<!-- if incorrect answer 
-    time subtracted from clock, this gives functionality to every button because incorrect button will take time off the clock -->
+    if incorrect answer 
+    time subtracted from clock
 
 if all questions answered 
 <!-- or timer 0 -->
@@ -20,11 +20,12 @@ if all questions answered
         save initals and score
 
 
+
 GIVEN I am taking a code quiz
 <!-- WHEN I click the start button -->
 <!-- THEN a timer starts and I am presented with a question -->
 WHEN I answer a question
-THEN I am presented with another question
+<!-- THEN I am presented with another question -->
 WHEN I answer a question incorrectly
 THEN time is subtracted from the clock
 WHEN all questions are answered 
